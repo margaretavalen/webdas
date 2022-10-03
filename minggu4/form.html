@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar HTML 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+	</head>
+	<body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Form Mahasiswa</h2>
+                </div>
+                <div class="card-body">
+                    <form name="fmhs" action="proses.php" method="post">
+                        <table width="55%">
+                            <tr>
+                                <td>NIM</td>
+                                <td><input type="number" name="fnim"></td>
+                            </tr>
+                            <tr>
+                                <td>Nama</td>
+                                <td><input type="text" name="fnama"></td>
+                            </tr>
+                            <tr>
+                                <td>Program Studi</td>
+                                <td>
+                                    <select name="fprodi">
+                                        <option value="">Pilih</option>
+                                        <option value="a11">S1 - Teknik Informatika</option>
+                                        <option value="a12">S1 - Sistem Informasi</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td><input type="date"></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Bidang Minat</td>
+                                <td><input type="checkbox" name="minat[]" value="webdev">Web Developer</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="minat[]" value="mobdev">Mobile Developer</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="minat[]" value="datsci">Data Science</td>
+                            </tr>
+                            <tr>
+                                <td>Lamp. Sertifikat</td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" name="fsubmit" value="Kirim"><input type="reset"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	</body>
+</html>
