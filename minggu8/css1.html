@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Semantic Element - HTML 5</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Latihan Semantic Element">
+    <meta name="keywords" content="HTML, CSS, Javascript, Semantic Element">
+    <meta name="author" content="pbw2022">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+  
+    nav {
+      float: left;
+      width: 25%;
+      background: #fff;
+      padding: 20px;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+    nav ul li a {
+      display: block;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover{
+      background-color: black;
+      color: white;
+      font-weight: bold;
+    }
+  
+    article {
+      float: left;
+      padding: 20px;
+      width: 75%;
+      background-color: #dcdbdb;
+    }
+  
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Judul Halaman</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+          <li><a href="#">Menu 4</a></li>
+          <li><a href="#">Menu 5</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Judul Artikel</h1>
+        <p>Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet.</p>
+        <p>Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
+
