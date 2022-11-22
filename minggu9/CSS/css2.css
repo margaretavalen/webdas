@@ -1,0 +1,51 @@
+body{ 
+  background: #000000; 
+  font-family: roboto; 
+  text-align: center; 
+} 
+   
+h1{ 
+  color: #fff; 
+} 
+   
+.ketengah{ 
+  margin: 10px auto; 
+  width: 1150px; 
+} 
+   
+
+.kotak{ 
+  background: blue; 
+  width: 500px; 
+  float: left; 
+  height: 250px; 
+  margin: 30px; 
+} 
+   
+.gradient1 { 
+  background: linear-gradient(#C26DBC, #3CACAE); 
+  background: -webkit-linear-gradient(#C26DBC, #3CACAE); /* For Safari 5.1 to 6.0 */ 
+  background: -o-linear-gradient(#C26DBC, #3CACAE); /* For Opera 11.1 to 12.0 */ 
+  background: -moz-linear-gradient(#C26DBC, #3CACAE); /* For Firefox 3.6 to 15 */ 
+} 
+   
+.gradient2 { 
+  background: linear-gradient(to right, #4297A0 , #E57F84, #F4EAE6); /* Standard syntax */ 
+  background: -webkit-linear-gradient(left, #4297A0 , #E57F84, #F4EAE6); /* For Safari 5.1 to 6.0 */ 
+  background: -o-linear-gradient(right, #4297A0, #E57F84, #F4EAE6); /* For Opera 11.1 to 12.0 */ 
+  background: -moz-linear-gradient(right, #4297A0, #E57F84, #F4EAE6); /* For Firefox 3.6 to 15 */ 
+} 
+   
+.gradient3 {
+background: radial-gradient(#E89137, #8F916B, #18262F); /* Standard syntax */ 
+background: -webkit-radial-gradient(#E89137, #8F916B, #18262F); /* Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(#E89137, #8F916B, #18262F); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(#E89137, #8F916B, #18262F); /* For Firefox 3.6 to 15 */ 
+} 
+   
+.gradient4 { 
+        background: radial-gradient(circle, #000001, #6331FF, #FFB68A); /* Standard syntax */   
+        background: -webkit-radial-gradient(circle, #000001, #6331FF, #FFB68A); /* Safari */ 
+        background: -o-radial-gradient(circle, #000001, #6331FF, #FFB68A); /* Opera 11.6 to 12.0 */ 
+        background: -moz-radial-gradient(circle, #000001, #6331FF, #FFB68A); /* Firefox 3.6 to 15 */ 
+} 
