@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello HTML</title>
+    </head>
+    <body>
+        <h1>Daftar Nama HMTI 2023</h1>
+        <form onsubmit="??" action="javascript:void(0);" method="post">
+            <input type="text" placeholder="Inputkan Nama" id="namaMhs">
+            <input type="submit" value="+">
+        </form>
+        <div id="counter">
+            Jumlah : 10 Mahasiswa
+        </div>
+        <table border="1">
+            <thead>
+                <tr><td>Data Nama HMTI 2023</td></tr>
+            </thead>
+            <tbody id="daftarNama">
+                <tr><td>Toni</td></tr>
+                <tr><td>Tono</td></tr>
+                <tr><td>Tini</td></tr>
+            </tbody>
+        </table>
+        <script>
+            var apl = new function() {
+                this.el = document.getElementById('daftarNama');
+                this.mhs = ['Toni','Tono','Tini'];
+
+                this.barisAll = function() {
+                    var data = '';
+
+                    if(this.mhs.length > 0) {
+                        for(i=0; i < this.mhs.length; i++) {
+                            data += '</tr>';
+                            data += '</td>' + this.mhs[i] + '</td>';
+                            data += '</tr>';
+                        }
+                    };
+                    this.Count(this.mhs.length);
+                    return this.el.innerHTML = data;
+                };
+
+                this.count = function(data) {
+                    var el = document.getElementById('counter');
+                    if(data) {
+                        el.innerHTML = 'Jumlah:' + data + ' ' + 'Mahasiswa'; 
+                    } else {
+                        el.innerHTML = 'Data Kosong';
+                    }
+                };
+                this.count = function() {
+                    //counter
+                }
+                this.addData = function() {
+                    //counter
+                }
+            }
+            apl.barisAlll();
+        </script>
+    </body>
+</html>
