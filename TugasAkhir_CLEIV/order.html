@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="form order cleaning service CLEIV">
+        <meta name="keywords" content="form, order">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="css/media/logoo.png" type="image/png">
+        <link rel="stylesheet" href="css/order.css">
+        <title>CLEIV</title> 
+    </head> 
+    <body> 
+        <section id="atas">
+            <header>
+                <img src="css/media/logo2.png" alt="logo" class="logo" width="120px">
+            </header>
+            <nav>
+                <a href="main.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="service.html">SERVICE</a>
+            </nav>
+        </section>
+        <section id="content">
+            <div class="container">
+                <div class="card">
+                    <p class="theservice">Biodata</p>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Anderson">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" id="number" placeholder="089124321207">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="mail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="mail" placeholder="johnanderson@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="formtitle">Address</p>
+                    <hr>
+                    <div class="mb-1">
+                        <label for="lokasi" class="form-label">Location</label>
+                        <textarea class="form-control" id="lokasi" rows="3" placeholder="ex : Jl Panda no 5"></textarea>
+                    </div>
+                    <div class="mb-1">
+                        <label for="detailloc" class="form-label">Detail Location</label>
+                        <textarea class="form-control" id="detailloc" rows="3" placeholder="ex : rumah putih gerbang coklat"></textarea>
+                    </div>
+                    <p class="theservice">Choose Service</p>
+                    <hr>
+                    <div class="col-sm-9" id="type">
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" onclick="onradio(value)" name="radiooption" id="housecleaning" value="option1" />
+                            <label class="radio-inline" for="inlineRadio1">House Cleaning</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" onclick="onradio(value)" name="radiooption" id="laundry" value="option2" />
+                            <label class="radio-inline" for="inlineRadio2">Laundry</label>
+                        </div>
+                    </div>
+                    <p class="typehouse">Choose Type of Service</p>
+                    <hr>
+                    <div class="col-sm-9">
+                        <div class="choosehouse" id="choosehouse">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="bedroom" value="bed" />
+                                <label class="radio-inline" for="bedroom">Bedroom</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="kitchen" value="kitchens" />
+                                <label class="radio-inline" for="kitchen">Kitchen</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="bathroom" value="bath" />
+                                <label class="radio-inline" for="bathroom">Bathroom</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="garden" value="gardens" />
+                                <label class="radio-inline" for="garden">Garden</label>
+                            </div>
+                        </div>
+                        <div class="chooselaund d-none" id="chooselaund">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="clothescare" value="clothes" />
+                                <label class="radio-inline" for="clothescare">Laundry</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="shoescare" value="shoes" />
+                                <label class="radio-inline" for="shoescare">Shoescare</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="theservice">Detail Services</p>
+                    <hr>
+                    <div class="request" id="request">
+                        <div class="mb-1">
+                            <label for="request" class="form-label">Special Request</label>
+                            <textarea class="form-control" id="request" rows="3" placeholder="ex : please help me change the lamp"></textarea>
+                        </div>
+                    </div>
+                    <div class="typeofcleaning d-none" id="typeofcleaning">
+                        <label class="form-label">Type of cleaning</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="typecleaning" id="deep">
+                            <label class="form-check-label" for="deep">Deep Cleaning</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="typecleaning" id="fast">
+                            <label class="form-check-label" for="fast">Fast Cleaning</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="typecleaning" id="white">
+                            <label class="form-check-label" for="white">Unyellowing and Whitening</label>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label for="note" class="form-label">Note</label>
+                        <textarea class="form-control" id="note" rows="3" placeholder="ex : don't touch my clothes"></textarea>
+                    </div>
+                    <p class="formtitle">Schedule</p>
+                    <hr>
+                    <label class="form-label">Date</label>
+                    <input class="date" type="date" data-dialog-mode="true">
+                    <label class="form-label">Time</label>
+                    <input class="date" type="time" data-dialog-mode="true">
+                    <div class="row justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" id="next">
+                                <a href="payment.html">NEXT</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        let book = decodeURIComponent(window.location.search.substr(1));
+                        var laundry = document.getElementById('chooselaund');
+                        var houseclean = document.getElementById('choosehouse');
+                        if (book == "bedroom"){
+                            document.getElementById("housecleaning").checked = true;
+                            document.getElementById("bedroom").checked = true;
+                        }
+                        else if (book == "kitchen"){
+                            document.getElementById("housecleaning").checked = true;
+                            document.getElementById("kitchen").checked = true;
+                        }
+                        else if (book == "bathroom"){
+                            document.getElementById("housecleaning").checked = true;
+                            document.getElementById("bathroom").checked = true;
+                        }
+                        else if (book == "garden"){
+                            document.getElementById("housecleaning").checked = true;
+                            document.getElementById("garden").checked = true;
+                        }
+                        else if (book == "laundry"){
+                            document.getElementById("laundry").checked = true;
+                            document.getElementById("clothescare").checked = true;
+                            laundry.classList.remove("d-none");
+                            houseclean.classList.add("d-none");
+                        }
+                        else if (book == "shoescare"){
+                            document.getElementById("laundry").checked = true;
+                            document.getElementById("shoescare").checked = true;
+                            laundry.classList.remove("d-none");
+                            houseclean.classList.add("d-none");
+                        }
+
+                        function onradio(rad) {
+                            var element = document.getElementById('choosehouse');
+                            var element2 = document.getElementById('chooselaund');
+                            var elementtype = document.getElementById('typeofcleaning');
+                            var elementreq = document.getElementById('request');
+                            if(rad == "option2") {
+                                element.classList.add("d-none");
+                                element2.classList.remove("d-none");
+                                elementtype.classList.remove("d-none");
+                                elementreq.classList.add("d-none");
+                            }
+                            else if(rad == "option1") {
+                                element2.classList.add("d-none");
+                                element.classList.remove("d-none");
+                                elementtype.classList.add("d-none");
+                                elementreq.classList.remove("d-none");
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <footer>
+                <div class="footer_content container">
+                    <div id="address" class="info row">
+                        <h5>ADDRESS</h5>
+                        <div>
+                            <p>Jl Pemuda No xx, Kauman, Semarang, Jawa Tengah, Indonesia 14xxx</p>
+                        </div>
+                    </div>
+                    <div id="hour" class="info row">
+                        <h5>OFFICE HOUR</h5>
+                        <div>
+                            <p>Tuesday - Sunday</p>
+                            <p>09.00 - 21.00</p>
+                        </div>
+                    </div>
+                    <div id="contact" class="info row">
+                        <h5>CONTACT</h5>
+                        <div>
+                            <div class="row">
+                                <p class="col">Phone</p>
+                                <p class="col">08967567435</p>
+                            </div>
+                            <div class="row">
+                                <p class="col">Customer service</p>
+                                <p class="col">024123456789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>copyright <i>&copy;</i> 2022 | CLEIV</p>
+                </div>
+            </footer>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body> 
+</html>

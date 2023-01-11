@@ -1,0 +1,193 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#atas {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  flex:1 1 200px;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left:70px;
+}
+
+nav {
+  cursor: pointer;
+  margin-right: 70px;
+}
+
+nav > a {
+  color: rgb(110, 130, 155);
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding: 35px 20px;
+  align-items: flex-end;
+  display: inline-block;
+}
+
+nav > a:hover {
+  color: rgb(190, 151, 43);
+  cursor: pointer;
+}
+
+#content {
+  height: fit-content;
+}
+
+.bg {
+  position: absolute;
+  height: 300px;
+}
+
+.text {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  padding: 50px 0;
+}
+
+.nav-link {
+  color: rgba(28,86,163,1);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: rgb(190, 151, 43);
+}
+
+.nav_service {
+  color: rgba(28,86,163,1);
+}
+
+#cards {
+  box-shadow: none !important;
+}
+
+.card {
+  padding: 30px 50px;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  text-decoration: none;
+  text-align: center;
+  color: rgba(28,86,163,1);
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+}
+
+.card-title {
+  font-family: Poppins;
+  font-weight: bold;
+  color: rgba(10,28,66);
+  text-align: center;
+}
+
+.card-text {
+  font-family: Poppins;
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(10,28,66);
+  color: white !important;
+  border-radius: 20px;
+  border: none;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+
+.price {
+  font-family: Poppins;
+  text-align: center;
+}
+
+.rp {
+  color: black;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.fee {
+  color: rgba(28,86,163,1);
+  font-size: 30px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.time {
+  color: black;
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
+#footer {
+  background-color:rgba(10,28,66);
+  color: white;
+}
+
+.footer_content {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info > h5 {
+  color: yellow;
+  font-size: medium;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info > div > p {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+
+.footer_bottom {
+  background: #000;
+  text-align: center;
+}
